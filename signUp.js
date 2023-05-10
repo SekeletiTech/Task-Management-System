@@ -24,9 +24,19 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
  // const analytics = getAnalytics(app);
-
+const signUpbtn = document.getElementById("signUp");
+const returnBtn = document.getElementById("return-btn");
 const main = document.getElementById("main");
 const createAcct = document.getElementById("create-acct");
+signUpbtn.addEventListener("click", () => {
+    main.style.display ="none";
+    createAcct.style.display = "block";
+});
+
+returnBtn.addEventListener("click", () => {
+    main.style.display = "block";
+    createAcct.style.display ="none";
+});
 //sign in page
 const emailInput=document.getElementById("email");
 const passwordInput=document.getElementById("password");
@@ -37,11 +47,10 @@ const emailsignUp=document.getElementById("email-signup");
 const passSignUp=document.getElementById("password-signup");
 const emailsignUpcon=document.getElementById("confirm-email-signup");
 const passSignUpcon=document.getElementById("confirm-password-signup");
-const createAcctBtn=document.getElementById("return-btn");
+const createAcctBtn=document.getElementById("create-acct-btn");
 
 
-const signUpbtn = document.getElementById("signUp");
-const returnBtn = document.getElementById("return-btn");
+
 
 var email,
     password,
@@ -106,13 +115,5 @@ var email,
     });
 
 
-signUpbtn.addEventListener("click", () => {
-    main.style.display ="none";
-    createAcct.style.display = "block";
-});
 
-returnBtn.addEventListener("click", () => {
-    main.style.display = "block";
-    createAcct.style.display ="none";
-});
 
