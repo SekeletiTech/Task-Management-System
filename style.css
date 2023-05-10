@@ -65,7 +65,8 @@ a{
     display:none;
 }
 
-@media only screen and ( min-width:600px;){
+
+@media screen and (max-width: 1700px) and (min-width: 600px){
     .nav__link{
         display:block;
         position:static;
@@ -74,7 +75,7 @@ a{
         background:none;
     }
     .nav__link a {
-        display:inline-block;
+        display:inline;
         padding:15px 20px;
     }
     .hamburger{
