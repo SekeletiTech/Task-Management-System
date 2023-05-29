@@ -9,14 +9,14 @@ body{
     font-family:sans-serif;
 }
 
-header{
+/* header{
     background-color:#01a2a8;
-    /* padding: 1rem 2rem;*/
-}
+    padding: 1rem 2rem;
+} */
 
 a{
     text-decoration:none;
-    color:white;
+    color:#01a2a8;
     font-size:1.2rem;
     font-weight:bold;
     /*text-transform:uppercase;*/
@@ -24,6 +24,7 @@ a{
 /*navgation styles*/
 .nav{
     position: fixed;
+    background-color: #01a2a8;
     width:90%;
     margin:auto;
     display:flex;
@@ -49,7 +50,7 @@ a{
 .nav__link{
     float: right;
     width:100%;
-    margin-top: 3.5rem;
+    margin-top: 0.5rem;
     background-color:#01a2a8;
 }
 
@@ -204,23 +205,83 @@ main::after{
 
 .card{
     padding:1rem;
+    background-color:#01a2a813;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: auto;
+    height: 250px;
     margin-bottom: 50px;
 }
 
 .card:hover{
     opacity: 0.9;
     transition: 0.3s;
-    background-color: #971642;
+    background-color: #01a2a8;
     color: white;
 }
+/* Footer */
+.footer{
+    position:sticky;
+    top: 100%;
+    width: 100%;
+    padding: 20px 50px;
+    font-family: "open sans";
+    background-color: #971642;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+/* styling socialmedia icons */
+.social_icons {
+    position: relative;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    margin: 10px 0;
 
+}
 
-
-
-
+.list{
+    list-style-type: none;
+}
+.icon{
+    font-size: 2em;
+    margin: 0 20px;
+    color: #fff;
+    transition: 0.5s;
+    display: inline;
+}
+.icon:hover{
+    transform: translateY(-10px);
+}
+/* styling menu icons i.e About, contact, home and Login */
+.menu{
+    position: relative;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    margin: 10px 0;
+}
+.tag{
+    font-size: 1em;
+    margin: 0 10px;
+    color: #fff;
+    transition: 0.5s;
+    display: flex;
+}
+.tag:hover{
+    color: #0c2344;
+}
+.menu_icons{
+    list-style: none;
+}
+.footer-bottom{
+    text-align: center;
+    margin: 10px 0;
+    width: 100vw;
+}
 
 
 @media screen and  (min-width: 600px) and (max-width: 1700px) {
